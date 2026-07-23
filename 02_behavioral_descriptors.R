@@ -87,3 +87,7 @@ summary_table[, -1] <- round(summary_table[, -1], 2)
 summary_table[, -1] <- lapply(summary_table[, -1], function(x) sprintf("%.2f", x))
 
 summary_table[1, 2:4] <- lapply(summary_table[1, 2:4], function(x) sprintf("%.0f", as.numeric(x)))
+                                
+# Display the summary statistics.
+
+print(summary_table)
