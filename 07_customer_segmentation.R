@@ -21,3 +21,11 @@ cluster_profile[, 2:4] <- round(cluster_profile[, 2:4], 2)
 # Display the cluster profiles.
 
 print(cluster_profile)
+
+# Save the cluster profile table.
+
+write.csv(
+  cluster_profile,
+  "results/cluster_profile.csv",
+  row.names = FALSE
+)
