@@ -1,0 +1,17 @@
+# Run the complete customer behavioral variability analysis pipeline.
+
+source("code/01_data_preprocessing.R")
+source("code/02_behavioral_descriptors.R")
+source("code/03_behavioral_distributions.R")
+source("code/04_correlation_analysis.R")
+source("code/05_descriptor_relationships.R")
+source("code/06_elbow_method.R")
+source("code/07_customer_segmentation.R")
+source("code/08_cluster_proportions.R")
+source("code/09_kruskal_validation.R")
+source("code/10_dunn_posthoc.R")
+source("code/11_revenue_validation.R")
+source("code/12_revenue_kruskal_validation.R")
+source("code/13_revenue_dunn_posthoc.R")
+source("code/14_fd_vs_fde_comparison.R")
+source("code/15_fd_vs_fde_dunn_comparison.R")
