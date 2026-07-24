@@ -1,9 +1,16 @@
 library(readxl)
 library(dplyr)
+library(here)
 
 retail <- bind_rows(
-  read_excel("online+retail+ii/online_retail_II.xlsx", sheet = "Year 2009-2010"),
-  read_excel("online+retail+ii/online_retail_II.xlsx", sheet = "Year 2010-2011")
+  read_excel(
+    here("data", "online_retail_II.xlsx"),
+    sheet = "Year 2009-2010"
+  ),
+  read_excel(
+    here("data", "online_retail_II.xlsx"),
+    sheet = "Year 2010-2011"
+  )
 )
 
 data_clean <- retail %>%
